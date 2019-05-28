@@ -1,0 +1,14 @@
+Sequential.c
+
+clang -Xpreprocessor -fopenmp -lomp Sequential.c -o sequential
+./sequential 
+
+ParallelReduction.c
+
+clang -Xpreprocessor -fopenmp -lomp ParallelReduction.c -o parallel
+./parallel
+
+Task-Level-Parallelism
+
+clang -Xpreprocessor -fopenmp -lomp Task-Level-Parallelism.c -o task
+./task
